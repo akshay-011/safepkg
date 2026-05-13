@@ -1,0 +1,11 @@
+[package]
+name = "safepkg-common"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+user = []
+
+[target."cfg(target_os = \"linux\")".dependencies]
+aya = { version = "0.11" }
+
